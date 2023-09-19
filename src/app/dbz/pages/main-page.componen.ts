@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Character } from '../interfaces/character.interface';
 
 @Component({
   selector: 'app-dbz-main-page',
@@ -8,4 +9,11 @@ export class MainPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  public characters: Character[] = [
+    {
+      name: 'Krilin',
+      power: 500,
+    },
+  ];
 }
